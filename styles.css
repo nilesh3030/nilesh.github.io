@@ -76,3 +76,15 @@ h2 {
     font-size: 24px;
     margin: 10px;
 }
+.company-info {
+    display: flex;
+    align-items: center;
+}
+
+.company-info img {
+    margin-right: 10px;
+}
+
+.company-details {
+    flex: 1;
+}
