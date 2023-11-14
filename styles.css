@@ -51,17 +51,6 @@ h2 {
     color: #004080;
 }
 
-.job {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.company-info {
-    display: flex;
-    align-items: center;
-}
-
 .company-info img {
     margin-right: 20px;
 }
@@ -89,4 +78,42 @@ h2 {
 .icons {
     font-size: 24px;
     margin: 10px;
+}
+
+.job {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.company-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.company-info .logo {
+    margin-right: 20px;
+}
+
+.designation, .location {
+    margin-bottom: 10px;
+}
+
+.location i {
+    margin-right: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
 }
