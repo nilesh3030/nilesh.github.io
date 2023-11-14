@@ -3,39 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Nilesh Srivastava</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
             font-family: 'Source Sans Pro', sans-serif;
             font-size: 16px;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0;
             background-color: #f5f5f5;
             color: #333;
         }
 
-        h1 {
-            font-size: 36px;
-            color: #004080;
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #004080;
+            padding: 10px 0;
             text-align: center;
+            z-index: 1000;
         }
 
-        nav {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        nav a {
+        header a {
             text-decoration: none;
-            color: #004080;
+            color: #fff;
             margin: 0 20px;
             font-size: 18px;
             font-weight: bold;
         }
 
-        nav a:hover {
-            color: #007acc;
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            margin-top: 60px;
+            font-size: 36px;
+            color: #004080;
+            text-align: center;
         }
 
         section {
@@ -65,24 +72,29 @@
         .contact-info a:hover {
             text-decoration: underline;
         }
+
+        .icons {
+            font-size: 24px;
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>Nilesh Kumar Srivastava</h1>
-
-    <nav>
-        <a href="#professional-summary">Professional Summary</a>
+    <header>
+        <a href="#about-me">About Me</a>
         <a href="#work-experience">Work Experience</a>
         <a href="#technical-skills">Technical Skills</a>
         <a href="#education">Education</a>
         <a href="#certifications">Certifications</a>
         <a href="#honours-awards">Honours and Awards</a>
         <a href="#contact-information">Contact Information</a>
-    </nav>
+    </header>
 
-    <section id="professional-summary">
-        <h2>Professional Summary</h2>
-        <p>Nilesh is a Data Science Specialist with a focused Master's in NLP, expected to graduate in February 2024. With 4.5 years of experience in data science, he excels in statistical analysis, mathematical modeling, and machine learning. Proficient in Python, R, SQL, Tableau, and Excel, Nilesh transforms complex data into actionable solutions, enabling informed business decisions. His ongoing education and passion for data science positions him as a valuable asset in the data-driven innovation landscape.</p>
+    <h1>Nilesh Srivastava</h1>
+
+    <section id="about-me">
+        <h2>About Me</h2>
+        <!-- Add your about me details here -->
     </section>
 
     <section id="work-experience">
@@ -112,10 +124,14 @@
 
     <section id="contact-information">
         <div class="contact-info">
-            <p>Contact: +82-10-7443-2947</p>
-            <a href="https://github.com/nilesh3030" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/nilesh3030" target="_blank">LinkedIn</a>
-            <a href="link-to-resume.pdf" download>Download Resume</a>
+            <i class="icons fab fa-github"></i>
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <i class="icons fab fa-linkedin"></i>
+            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+            <i class="icons fas fa-envelope"></i>
+            <a href="mailto:nilesh3030srivastava@gmail.com">Gmail</a>
+            <i class="icons fas fa-download"></i>
+            <a href="link-to-resume.pdf" download>Resume</a>
         </div>
     </section>
 </body>
