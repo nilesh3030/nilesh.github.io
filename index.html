@@ -1,258 +1,33 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 16px;
-            line-height: 1.6;
-            margin: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #004080;
-            padding: 10px 0;
-            text-align: center;
-            z-index: 1000;
-        }
-
-        header a {
-            text-decoration: none;
-            color: #fff;
-            margin: 0 20px;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        header a:hover {
-            text-decoration: underline;
-        }
-
-        h1 {
-            margin-top: 60px;
-            font-size: 36px;
-            color: #004080;
-            text-align: center;
-        }
-
-        section {
-            margin-top: 20px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #004080;
-        }
-
-        .contact-info {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .contact-info a {
-            text-decoration: none;
-            color: #007acc;
-            margin: 0 10px;
-            font-size: 16px;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        .icons {
-            font-size: 24px;
-            margin: 10px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
-        <a href="#about-me">About Me</a>
-        <a href="#work-experience">Work Experience</a>
-        <a href="#technical-skills">Technical Skills</a>
-        <a href="#education">Education</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#honours-awards">Honours and Awards</a>
-        <a href="#contact-information">Contact Information</a>
+        <a href="#" onclick="loadContent('about_me.html')">About Me</a>
+        <a href="#" onclick="loadContent('work_experience.html')">Work Experience</a>
+        <a href="#" onclick="loadContent('technical_skills.html')">Technical Skills</a>
+        <a href="#" onclick="loadContent('education.html')">Education</a>
+        <a href="#" onclick="loadContent('certifications.html')">Certifications</a>
+        <a href="#" onclick="loadContent('honours_awards.html')">Honours and Awards</a>
+        <a href="#" onclick="loadContent('contact_information.html')">Contact Information</a>
     </header>
 
-    <h1>Nilesh Srivastava</h1>
+    <div id="content">
+        <!-- Content will be loaded dynamically here -->
+    </div>
 
-    <section id="about-me">
-        <h2>About Me</h2>
-        <!-- Add your about me details here -->
-    </section>
-
-	<style>
-		#work-experience {
-			text-align: center;
-		}
-
-		.job {
-			max-width: 600px;
-			margin: 0 auto;
-			text-align: left;
-			margin-bottom: 20px;
-		}
-
-		.company-info {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-
-		.company-info img {
-			margin-right: 10px;
-		}
-
-		.company-info h3 {
-			margin: 0;
-			font-size: 1.5em;
-		}
-
-		.designation {
-			font-size: 1.2em;
-			margin: 10px 0;
-		}
-
-		.duration {
-			margin: 10px 0;
-			font-style: italic;
-		}
-
-		a {
-			display: block;
-			margin-top: 10px;
-		}
-	</style>
-
-	<section id="work-experience">
-		<h2>Work Experience</h2>
-		<!-- Korea Institute of Science and Technology Information (KISTI) -->
-		<div class="job">
-			<div class="company-info">
-				<img src="logos/kisti.png" alt="KISTI Logo" width="50px" height="50px">
-				<a href="https://www.kisti.re.kr" target="_blank">
-					<h3>Korea Institute of Science and Technology Information (KISTI)</h3>
-				</a>
-			</div>
-			<p class="designation">Graduate Student Researcher</p>
-			<p>Daejeon, South Korea</p>
-			<!-- Additional job details... -->
-			<p>Designed and implemented a machine learning model to predict occurrences of brain strokes among patients in Korea.</p>
-			<p>Built and deployed a text classification model that effectively distinguished news articles across different categories, utilizing Docker and Kubernetes for seamless deployment.</p>
-			<p>Currently contributing to the optimization of T5 language models aimed at solving mathematical word problems.</p>
-			<p class="duration">03/2022 to Current</p>
-			<a href="https://www.kisti.re.kr" target="_blank">Visit KISTI</a>
-		</div>
-
-		<!-- Absolutdata Research & Analytics Solutions -->
-		<div class="job">
-			<div class="company-info">
-				<img src="logos/Absolutdata.png" alt="Absolutdata Logo" width="50px" height="50px">
-				<a href="https://www.absolutdata.com" target="_blank">
-					<h3>Absolutdata Research & Analytics Solutions Private</h3>
-				</a>
-			</div>
-			<p class="designation">Consultant</p>
-			<p>Gurugram, India</p>
-			<!-- Additional job details... -->
-			<p>Worked extensively for a prominent global retail client, focusing on building and deploying intricate price elasticity models tailored to distinct geographical regions.</p>
-			<p class="duration">05/2021 to 02/2022</p>
-			<a href="https://www.absolutdata.com" target="_blank">Visit Absolutdata</a>
-		</div>
-
-		<!-- Cartesian Consulting Private Limited (Senior Analyst) -->
-		<div class="job">
-			<div class="company-info">
-				<img src="logos/cartesian.png" alt="Cartesian Logo" width="50px" height="50px">
-				<a href="https://www.cartesianconsulting.com" target="_blank">
-					<h3>Cartesian Consulting Private Limited</h3>
-				</a>
-			</div>
-			<p class="designation">Senior Analyst</p>
-			<p>Gurugram, India</p>
-			<!-- Additional job details... -->
-			<p class="duration">07/2020 to 05/2021</p>
-			<a href="https://www.cartesianconsulting.com" target="_blank">Visit Cartesian</a>
-		</div>
-
-		<!-- Cartesian Consulting Private Limited (Analyst) -->
-		<div class="job">
-			<div class="company-info">
-				<img src="logos/cartesian.png" alt="Cartesian Logo" width="50px" height="50px">
-				<a href="https://www.cartesianconsulting.com" target="_blank">
-					<h3>Cartesian Consulting Private Limited</h3>
-				</a>
-			</div>
-			<p class="designation">Analyst</p>
-			<p>Gurugram, India</p>
-			<!-- Additional job details... -->
-			<p class="duration">03/2019 to 06/2020</p>
-			<a href="https://www.cartesianconsulting.com" target="_blank">Visit Cartesian</a>
-		</div>
-
-		<!-- Infosys Limited -->
-		<div class="job">
-			<div class="company-info">
-				<img src="logos/infy.png" alt="Infosys Logo" width="50px" height="50px">
-				<a href="https://www.infosys.com" target="_blank">
-					<h3>Infosys Limited</h3>
-				</a>
-			</div>
-			<p class="designation">Systems Engineer</p>
-			<p>Pune, India</p>
-			<!-- Additional job details... -->
-			<p class="duration">11/2017 to 03/2019</p>
-			<a href="https://www.infosys.com" target="_blank">Visit Infosys</a>
-		</div>
-	</section>
-
-    <section id="technical-skills">
-        <h2>Technical Skills</h2>
-        <!-- Add your technical skills here -->
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <!-- Add your education details here -->
-    </section>
-
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <!-- Add your certifications here -->
-    </section>
-
-    <section id="honours-awards">
-        <h2>Honours and Awards</h2>
-        <!-- Add your honours and awards here -->
-    </section>
-
-    <section id="contact-information">
-        <div class="contact-info">
-            <i class="icons fab fa-github"></i>
-            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-            <i class="icons fab fa-linkedin"></i>
-            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-            <i class="icons fas fa-envelope"></i>
-            <a href="mailto:nilesh3030srivastava@gmail.com">Gmail</a>
-            <i class="icons fas fa-download"></i>
-            <a href="link-to-resume.pdf" download>Resume</a>
-        </div>
-    </section>
+    <script>
+        function loadContent(page) {
+            fetch(page)
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('content').innerHTML = html;
+                });
+        }
+    </script>
 </body>
 </html>
