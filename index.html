@@ -3,31 +3,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; url=aboutme.html">
+    <title>Nilesh Srivastava</title>
 </head>
 <body>
-    <header>
-        <a href="#" onclick="loadContent('about_me.html')">About Me</a>
-        <a href="#" onclick="loadContent('work_experience.html')">Work Experience</a>
-        <a href="#" onclick="loadContent('technical_skills.html')">Technical Skills</a>
-        <a href="#" onclick="loadContent('education.html')">Education</a>
-        <a href="#" onclick="loadContent('certifications.html')">Certifications</a>
-        <a href="#" onclick="loadContent('honours_awards.html')">Honours and Awards</a>
-        <a href="#" onclick="loadContent('contact_information.html')">Contact Information</a>
-    </header>
-
-    <div id="content">
-        <!-- Content will be loaded dynamically here -->
-    </div>
-
-    <script>
-        function loadContent(page) {
-            fetch(page)
-                .then(response => response.text())
-                .then(html => {
-                    document.getElementById('content').innerHTML = html;
-                });
-        }
-    </script>
+    <p>If you are not redirected, <a href="aboutme.html">click here</a>.</p>
 </body>
 </html>
